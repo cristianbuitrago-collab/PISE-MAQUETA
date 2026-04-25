@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario Académico 2026 - Colegio Gabriel García Márquez</title>
+    <style>
+        :root {
+            --verde-institucional: #297D0B;
+            --amarillo-institucional: #FFD700;
+            --azul-profundo: #1a252f;
+            --blanco: #ffffff;
+            --gris-fondo: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--gris-fondo);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--azul-profundo);
+            padding: 1rem 0;
+            border-bottom: 4px solid var(--verde-institucional);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: var(--blanco);
+            text-decoration: none;
+            padding: 8px 15px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: var(--amarillo-institucional);
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background: var(--blanco);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        h1 {
+            color: var(--azul-profundo);
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .subtitulo {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        /* Estilo de botones de sección (Meses/Periodos) */
+        .indicador-periodo {
+            background-color: var(--verde-institucional);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 8px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        /* Organización Visual: Tablas */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: var(--azul-profundo);
+            text-align: left;
+            padding: 12px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        td {
+            padding: 15px 12px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .fecha-texto {
+            font-weight: bold;
+            color: var(--verde-institucional);
+            width: 30%;
+        }
+
+        .actividad-texto {
+            color: #444;
+            width: 50%;
+        }
+
+        /* Etiquetas de Categoría */
+        .tag {
+            padding: 4px 10px;
+            border-radius: 5px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .academico { background-color: #e8f5e9; color: #2e7d32; }
+        .receso { background-color: #fff3e0; color: #ef6c00; }
+
+        footer {
+            background-color: var(--azul-profundo);
+            color: var(--blanco);
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav aria-label="Menú principal">
+            <a href="inicio.html">Inicio</a>
+            <a href="quienes_somos.html">Quiénes Somos</a>
+            <a href="oferta.html">Oferta Académica</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="calendario.html">Calendario</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="registro.html">Matrículas</a>
+            <a href="login.html" style="color: var(--amarillo-institucional);">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Calendario Académico 2026</h1>
+        <p class="subtitulo">Consulte las fechas clave del año escolar en nuestra sede de Tunja.</p>
+
+        <div class="indicador-periodo">Primer Semestre</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Evento / Actividad</th>
+                    <th>Categoría</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="fecha-texto">Feb 02 al 10 de Abril</td>
+                    <td class="actividad-texto">Primer Periodo Académico</td>
+                    <td><span class="tag academico">Académico</span></td>
+                </tr>
+                <tr>
+                    <td class="fecha-texto">Mar 30 al 03 de Abril</td>
+                    <td class="actividad-texto">Receso de Semana Santa</td>
+                    <td><span class="tag receso">Receso</span></td>
+                </tr>
+                <tr>
+                    <td class="fecha-texto">Abr 13 al 12 de Junio</td>
+                    <td class="actividad-texto">Segundo Periodo Académico</td>
+                    <td><span class="tag academico">Académico</span></td>
+                </tr>
+                <tr>
+                    <td class="fecha-texto">Jun 22 al 06 de Julio</td>
+                    <td class="actividad-texto">Receso Académico de Mitad de Año</td>
+                    <td><span class="tag receso">Receso</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="indicador-periodo">Segundo Semestre</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Evento / Actividad</th>
+                    <th>Categoría</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="fecha-texto">Jul 06 al 11 de Septiembre</td>
+                    <td class="actividad-texto">Tercer Periodo Académico</td>
+                    <td><span class="tag academico">Académico</span></td>
+                </tr>
+                <tr>
+                    <td class="fecha-texto">Sep 14 al 27 de Noviembre</td>
+                    <td class="actividad-texto">Cuarto Periodo Académico</td>
+                    <td><span class="tag academico">Académico</span></td>
+                </tr>
+                <tr>
+                    <td class="fecha-texto">Oct 05 al 11 de Octubre</td>
+                    <td class="actividad-texto">Semana de Receso Estudiantil</td>
+                    <td><span class="tag receso">Receso</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Colegio Gabriel García Márquez - Tunja | Paz y Bien</p>
+    </footer>
+
+</body>
+</html>

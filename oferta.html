@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta Académica - Colegio Gabriel García Márquez</title>
+    <style>
+        :root {
+            --verde-institucional: #297D0B;
+            --amarillo-institucional: #FFD700;
+            --azul-profundo: #1a252f;
+            --blanco: #ffffff;
+            --gris-fondo: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--gris-fondo);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 2. Maquetación Semántica: Header y Nav */
+        header {
+            background-color: var(--azul-profundo);
+            padding: 1rem 0;
+            border-bottom: 4px solid var(--verde-institucional);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        /* 3. Navegación entre pantallas */
+        nav a {
+            color: var(--blanco);
+            text-decoration: none;
+            padding: 8px 15px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--amarillo-institucional);
+        }
+
+        /* 6. Organización Visual y Alineación */
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .encabezado-seccion {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            color: var(--azul-profundo);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .linea-decorativa {
+            height: 4px;
+            width: 80px;
+            background: var(--amarillo-institucional);
+            margin: 10px auto;
+        }
+
+        /* Grid de niveles educativos */
+        .grid-oferta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .tarjeta-nivel {
+            background: var(--blanco);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--verde-institucional);
+            transition: transform 0.3s ease;
+        }
+
+        .tarjeta-nivel:hover {
+            transform: translateY(-5px);
+        }
+
+        .tarjeta-nivel h2 {
+            color: var(--verde-institucional);
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        .lista-items {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .lista-items li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }
+
+        .lista-items li::before {
+            content: "✓";
+            color: var(--verde-institucional);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .btn-info {
+            display: block;
+            text-align: center;
+            background-color: var(--azul-profundo);
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .btn-info:hover {
+            background-color: var(--verde-institucional);
+        }
+
+        footer {
+            background-color: var(--azul-profundo);
+            color: var(--blanco);
+            text-align: center;
+            padding: 25px;
+            margin-top: 60px;
+            border-top: 5px solid var(--verde-institucional);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav aria-label="Menú principal">
+            <a href="inicio.html">Inicio</a>
+            <a href="quienes_somos.html">Quiénes Somos</a>
+            <a href="oferta.html">Oferta Académica</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="calendario.html">Calendario</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="registro.html">Matrículas</a>
+            <a href="login.html" style="color: var(--amarillo-institucional);">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="encabezado-seccion">
+            <h1>Nuestra Oferta Educativa</h1>
+            <div class="linea-decorativa"></div>
+            <p>Formamos con excelencia desde los primeros pasos hasta la educación media.</p>
+        </section>
+
+        <div class="grid-oferta">
+            <article class="tarjeta-nivel">
+                <h2>Educación Preescolar</h2>
+                <p>Enfoque lúdico y desarrollo de habilidades socio-afectivas para los más pequeños.</p>
+                <ul class="lista-items">
+                    <li>Pre-jardín</li>
+                    <li>Jardín</li>
+                    <li>Transición</li>
+                </ul>
+                <a href="contacto.html" class="btn-info">Más información</a>
+            </article>
+
+            <article class="tarjeta-nivel">
+                <h2>Básica Primaria</h2>
+                <p>Fortalecimiento de competencias básicas en lenguaje, matemáticas y valores.</p>
+                <ul class="lista-items">
+                    <li>Grados 1° a 5°</li>
+                    <li>Inglés intensivo</li>
+                    <li>Escuelas deportivas</li>
+                </ul>
+                <a href="contacto.html" class="btn-info">Más información</a>
+            </article>
+
+            <article class="tarjeta-nivel">
+                <h2>Secundaria y Media</h2>
+                <p>Preparación avanzada para la educación superior con énfasis en pensamiento crítico.</p>
+                <ul class="lista-items">
+                    <li>Básica Secundaria (6° a 9°)</li>
+                    <li>Media Vocacional (10° y 11°)</li>
+                    <li>Convenios Técnicos</li>
+                </ul>
+                <a href="contacto.html" class="btn-info">Más información</a>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Colegio Gabriel García Márquez - Tunja | Excelencia Educativa</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias - Colegio Gabriel García Márquez</title>
+    <style>
+        :root {
+            --verde-institucional: #297D0B;
+            --amarillo-institucional: #FFD700;
+            --azul-profundo: #1a252f;
+            --blanco: #ffffff;
+            --gris-fondo: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--gris-fondo);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Maquetación Semántica: Header */
+        header {
+            background-color: var(--azul-profundo);
+            padding: 1rem 0;
+            border-bottom: 4px solid var(--verde-institucional);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: var(--blanco);
+            text-decoration: none;
+            padding: 8px 15px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--amarillo-institucional);
+        }
+
+        /* Organización Visual */
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .titulo-noticias {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: var(--azul-profundo);
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+
+        .linea-verde {
+            height: 3px;
+            width: 60px;
+            background-color: var(--verde-institucional);
+            margin: 0 auto 20px;
+        }
+
+        /* Estilo de las noticias alineadas */
+        .noticia-item {
+            background: var(--blanco);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-left: 6px solid var(--verde-institucional);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .fecha {
+            color: var(--verde-institucional);
+            font-weight: bold;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: var(--azul-profundo);
+            margin: 0 0 10px 0;
+            font-size: 1.6rem;
+        }
+
+        .resumen {
+            text-align: justify;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .leer-mas {
+            align-self: flex-start;
+            color: var(--verde-institucional);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            border-bottom: 2px solid transparent;
+            transition: 0.3s;
+        }
+
+        .leer-mas:hover {
+            border-bottom: 2px solid var(--amarillo-institucional);
+        }
+
+        footer {
+            background-color: var(--azul-profundo);
+            color: var(--blanco);
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav aria-label="Menú principal">
+            <a href="inicio.html">Inicio</a>
+            <a href="quienes_somos.html">Quiénes Somos</a>
+            <a href="oferta.html">Oferta Académica</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="calendario.html">Calendario</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="registro.html">Matrículas</a>
+            <a href="login.html" style="color: var(--amarillo-institucional);">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="titulo-noticias">
+            <h1>Noticias y Comunicados</h1>
+            <div class="linea-verde"></div>
+            <p>Infórmese sobre los eventos y anuncios más importantes de nuestra comunidad educativa.</p>
+        </section>
+
+        <article class="noticia-item">
+            <span class="fecha">6 de Abril, 2026</span>
+            <h2>Inauguración del nuevo Laboratorio de Ciencias</h2>
+            <p class="resumen">
+                Gracias a la gestión de la rectoría y el apoyo de la Secretaría de Educación de Tunja, hemos abierto las puertas del nuevo laboratorio equipado con tecnología de punta para nuestros estudiantes de media vocacional.
+            </p>
+            <a href="#" class="leer-mas">Leer comunicado completo →</a>
+        </article>
+
+        <article class="noticia-item">
+            <span class="fecha">2 de Abril, 2026</span>
+            <h2>Resultados de las Pruebas Saber Pro</h2>
+            <p class="resumen">
+                Felicitamos a nuestros estudiantes de grado 11° por los excelentes resultados obtenidos, manteniendo al Colegio Gabriel García Márquez en los niveles más altos de excelencia académica de la región.
+            </p>
+            <a href="#" class="leer-mas">Leer comunicado completo →</a>
+        </article>
+
+        <article class="noticia-item">
+            <span class="fecha">25 de Marzo, 2026</span>
+            <h2>Circular No. 04: Entrega de Informes Académicos</h2>
+            <p class="resumen">
+                Se informa a los padres de familia que la entrega de notas del primer periodo se llevará a cabo de manera presencial el próximo viernes. Por favor revisar los horarios por grado.
+            </p>
+            <a href="#" class="leer-mas">Descargar Circular PDF →</a>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Colegio Gabriel García Márquez - Tunja | Sistema PISE-GGM</p>
+    </footer>
+
+</body>
+</html>

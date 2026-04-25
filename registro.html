@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Colegio Gabriel García Márquez</title>
+    <style>
+        :root {
+            --verde-institucional: #297D0B;
+            --amarillo-institucional: #FFD700;
+            --azul-profundo: #1a252f;
+            --blanco: #ffffff;
+            --gris-fondo: #f0f2f5;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: var(--gris-fondo);
+        }
+
+        /* 2. Maquetación Semántica */
+        header {
+            background-color: var(--azul-profundo);
+            padding: 1rem;
+            border-bottom: 4px solid var(--verde-institucional);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: var(--blanco);
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        nav a:hover {
+            color: var(--amarillo-institucional);
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        /* 6. Organización Visual: Estilo similar al Login */
+        .register-card {
+            background: var(--blanco);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 500px;
+            border-top: 5px solid var(--amarillo-institucional);
+        }
+
+        h2 {
+            color: var(--azul-profundo);
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .subtitulo {
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+        }
+
+        /* 4. Formulario Completo y 5. Accesibilidad */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: var(--azul-profundo);
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: var(--verde-institucional);
+            box-shadow: 0 0 5px rgba(41, 125, 11, 0.2);
+        }
+
+        /* Botón solicitado: Solicitar Registro */
+        .btn-registro {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--verde-institucional);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        .btn-registro:hover {
+            background-color: #1e5a08;
+        }
+
+        .footer-links {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .footer-links a {
+            color: var(--verde-institucional);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: var(--azul-profundo);
+            color: var(--blanco);
+            text-align: center;
+            padding: 15px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="inicio.html">← Volver al Inicio</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="register-card">
+            <h2>Registro Institucional</h2>
+            <p class="subtitulo">Complete sus datos para solicitar el ingreso al sistema PISE-GGM</p>
+            
+            <form action="#">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Gabriel José García Márquez" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="documento">Documento (ID):</label>
+                    <input type="text" id="documento" name="documento" placeholder="Número de identificación" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="usuario_reg">Usuario:</label>
+                    <input type="text" id="usuario_reg" name="usuario" placeholder="Cree un nombre de usuario" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pass_reg">Contraseña:</label>
+                    <input type="password" id="pass_reg" name="password" placeholder="Mínimo 8 caracteres" required>
+                </div>
+
+                <button type="submit" class="btn-registro">Solicitar Registro</button>
+            </form>
+
+            <div class="footer-links">
+                ¿Ya tiene una cuenta? <a href="login.html">Inicie sesión aquí</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Colegio Gabriel García Márquez - Tunja | Paz y Bien &copy; 2026</p>
+    </footer>
+
+</body>
+</html>

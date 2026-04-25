@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Colegio Gabriel García Márquez (Tunja)</title>
+    <style>
+        :root {
+            /* Colores extraídos del escudo */
+            --verde-principal: #297D0B; 
+            --amarillo-escudo: #FFD700;
+            --oscuro-elegante: #1a252f; /* Para títulos y textos fuertes */
+            --blanco-fondo: #ffffff;
+            --gris-suave: #f4f4f4;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: var(--blanco-fondo);
+            line-height: 1.6;
+        }
+
+        /* Navegación Semántica según Mapa P01 */
+        header {
+            background-color: var(--oscuro-elegante);
+            border-bottom: 4px solid var(--verde-principal);
+            padding: 0.8rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--amarillo-escudo);
+        }
+
+        /* Botón Login con el verde del escudo */
+        .btn-login {
+            background-color: var(--verde-principal);
+            border-radius: 4px;
+            border: 1px solid var(--amarillo-escudo);
+        }
+
+        /* Sección de Imagen (Hero) */
+        .hero {
+            background-color: var(--gris-suave);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .img-marco {
+            max-width: 1000px;
+            margin: 0 auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
+        }
+
+        .img-marco img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Contenedor de Bienvenida Alineado */
+        main {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        /* Título refinado: Color oscuro con detalle lateral verde */
+        h1 {
+            color: var(--oscuro-elegante);
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+            letter-spacing: -1px;
+        }
+
+        .subtitulo {
+            color: var(--verde-principal);
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .paz-y-bien {
+            display: inline-block;
+            padding: 5px 15px;
+            border-top: 2px solid var(--amarillo-escudo);
+            border-bottom: 2px solid var(--amarillo-escudo);
+            color: #555;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        footer {
+            background-color: var(--oscuro-elegante);
+            color: #bdc3c7;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+            border-top: 5px solid var(--verde-principal);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav aria-label="Navegación principal">
+            <a href="inicio.html">Inicio</a>
+            <a href="quienes_somos.html">Quiénes Somos</a>
+            <a href="oferta.html">Oferta Académica</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="calendario.html">Calendario</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="matriculas.html">Matrículas</a>
+            <a href="login.html" class="btn-login">Login</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="img-marco">
+            <img src="COLEGIO.PNG" alt="Sede Principal Colegio Gabriel García Márquez - Tunja">
+        </div>
+    </section>
+
+    <main>
+        <h1>Colegio Gabriel García Márquez</h1>
+        <p class="subtitulo">Institución Educativa de Tunja</p>
+        
+        <div class="paz-y-bien">"Paz y Bien"</div>
+
+        <p style="font-size: 1.1rem; color: #444;">
+            Bienvenidos al portal oficial del sistema <strong>PISE-GGM</strong>. 
+            Nuestra institución se enorgullece de formar ciudadanos íntegros 
+            bajo los más altos estándares de calidad académica y humana en el departamento de Boyacá.
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Colegio Gabriel García Márquez - Tunja, Colombia</p>
+        <p style="font-size: 0.8rem;">Comprometidos con la excelencia educativa[cite: 1].</p>
+    </footer>
+
+</body>
+</html>

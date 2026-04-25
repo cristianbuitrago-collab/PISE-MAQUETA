@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña - PISE-GGM</title>
+    <style>
+        :root {
+            --verde-institucional: #297D0B;
+            --amarillo-institucional: #FFD700;
+            --azul-profundo: #1a252f;
+            --blanco: #ffffff;
+            --gris-fondo: #f0f2f5;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: var(--gris-fondo);
+        }
+
+        /* 2. Maquetación Semántica */
+        header {
+            background-color: var(--azul-profundo);
+            padding: 1rem;
+            border-bottom: 4px solid var(--verde-institucional);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* 3. Navegación (Retorno al Login) */
+        nav a {
+            color: var(--blanco);
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        nav a:hover {
+            color: var(--amarillo-institucional);
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* 6. Organización Visual */
+        .card {
+            background: var(--blanco);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+            border-top: 5px solid var(--amarillo-institucional);
+        }
+
+        h2 {
+            color: var(--azul-profundo);
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 25px;
+            font-size: 0.95rem;
+        }
+
+        /* 4. Formulario Completo y 5. Accesibilidad */
+        .form-group {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: var(--azul-profundo);
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        /* Botones del Mapa de Navegación [P09] */
+        .btn-enviar {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--verde-institucional);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .btn-volver {
+            display: inline-block;
+            color: var(--verde-institucional);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .btn-volver:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: var(--azul-profundo);
+            color: var(--blanco);
+            text-align: center;
+            padding: 15px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="inicio.html">Inicio</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Recuperar Contraseña</h2>
+            <p>Ingrese su correo electrónico institucional para recibir un enlace de restablecimiento.</p>
+            
+            <form action="#">
+                <div class="form-group">
+                    <label for="email-recuperacion">Correo Electrónico:</label>
+                    <input type="email" id="email-recuperacion" name="email" placeholder="ejemplo@pise-ggm.edu.co" required>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar enlace</button>
+            </form>
+
+            <div style="margin-top: 10px;">
+                <a href="login.html" class="btn-volver">Volver al Login</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Colegio Gabriel García Márquez - Tunja | Sistema PISE-GGM &copy; 2026</p>
+    </footer>
+
+</body>
+</html>

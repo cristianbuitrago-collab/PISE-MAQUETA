@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Rol - PISE-GGM</title>
+    <style>
+        :root {
+            --verde-institucional: #297D0B;
+            --amarillo-institucional: #FFD700;
+            --azul-profundo: #1a252f;
+            --blanco: #ffffff;
+            --gris-fondo: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--gris-fondo);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: var(--azul-profundo);
+            padding: 1.5rem;
+            text-align: center;
+            border-bottom: 4px solid var(--verde-institucional);
+        }
+
+        .logo-texto {
+            color: var(--blanco);
+            font-weight: bold;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        main {
+            flex: 1;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h1 { color: var(--azul-profundo); font-size: 2.2rem; margin-bottom: 10px; }
+        .instruccion { color: #666; margin-bottom: 40px; }
+
+        /* 6. Organización Visual: Grid Maestro */
+        .roles-grid {
+            display: grid;
+            /* Definimos 4 columnas para los roles principales */
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .rol-card {
+            background: var(--blanco);
+            padding: 30px 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--azul-profundo);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border-bottom: 5px solid transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .rol-card:hover {
+            transform: translateY(-8px);
+            border-bottom-color: var(--verde-institucional);
+            box-shadow: 0 8px 20px rgba(41, 125, 11, 0.15);
+        }
+
+        /* ESTILO PARA CENTRAR EL VISITANTE */
+        .visitante-container {
+            grid-column: 1 / -1; /* Ocupa todo el ancho del grid */
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .visitante-card {
+            width: 220px; /* Mismo tamaño que las de arriba */
+        }
+
+        .visitante-card:hover {
+            border-bottom-color: var(--amarillo-institucional);
+        }
+
+        .rol-icon { font-size: 3.5rem; margin-bottom: 15px; }
+        .rol-nombre { font-weight: bold; font-size: 1.1rem; text-transform: uppercase; }
+        .rol-descripcion { font-size: 0.85rem; color: #888; margin-top: 8px; }
+
+        .btn-volver {
+            margin-top: 40px;
+            display: inline-block;
+            color: var(--verde-institucional);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Ajuste para tablets y móviles */
+        @media (max-width: 900px) {
+            .roles-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 500px) {
+            .roles-grid { grid-template-columns: 1fr; }
+        }
+
+        footer {
+            background-color: var(--azul-profundo);
+            color: var(--blanco);
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-texto">SISTEMA PISE-GGM</div>
+    </header>
+
+    <main>
+        <h1>Bienvenido al Portal Institucional</h1>
+        <p class="instruccion">Seleccione su perfil de acceso:</p>
+
+       <nav class="roles-grid">
+    <a href="dashboard_estudiante.html" class="rol-card">
+        <span class="rol-icon">🎓</span>
+        <span class="rol-nombre">Estudiante</span>
+    </a>
+    <a href="panel_docente.html" class="rol-card">
+        <span class="rol-icon">👨‍🏫</span>
+        <span class="rol-nombre">Docente</span>
+    </a>
+    <a href="panel_padre.html" class="rol-card">
+        <span class="rol-icon">👪</span>
+        <span class="rol-nombre">Acudiente</span>
+    </a>
+    <a href="panel_rector.html" class="rol-card">
+        <span class="rol-icon">🏛️</span>
+        <span class="rol-nombre">Rectoría</span>
+    </a>
+    <div class="visitante-container">
+        <a href="inicio.html" class="rol-card visitante-card">
+            <span class="rol-icon">🌍</span>
+            <span class="rol-nombre">Visitante</span>
+        </a>
+    </div>
+</nav>
+
+        <a href="login.html" class="btn-volver">← Volver al Login</a>
+    </main>
+
+    <footer>
+        <p>Colegio Gabriel García Márquez - Tunja | "Paz y Bien" &copy; 2026</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes Somos - Colegio Gabriel García Márquez</title>
+    <style>
+        :root {
+            --verde-institucional: #297D0B;
+            --amarillo-institucional: #FFD700;
+            --azul-profundo: #1a252f;
+            --blanco: #ffffff;
+            --gris-fondo: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--gris-fondo);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 2. Maquetación Semántica: Header y Nav */
+        header {
+            background-color: var(--azul-profundo);
+            padding: 1rem 0;
+            border-bottom: 4px solid var(--verde-institucional);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        /* 3. Navegación entre pantallas */
+        nav a {
+            color: var(--blanco);
+            text-decoration: none;
+            padding: 8px 15px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--amarillo-institucional);
+        }
+
+        /* 6. Organización Visual y Alineación */
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: var(--blanco);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        /* 5. Jerarquía de encabezados */
+        h1 {
+            color: var(--azul-profundo);
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: var(--verde-institucional);
+            border-left: 5px solid var(--amarillo-institucional);
+            padding-left: 15px;
+            margin-top: 30px;
+        }
+
+        .texto-centrado {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .grid-mision-vision {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .grid-mision-vision { grid-template-columns: 1fr; }
+        }
+
+        .tarjeta-info {
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        /* Pie de página semántico */
+        footer {
+            background-color: var(--azul-profundo);
+            color: var(--blanco);
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+            border-top: 5px solid var(--verde-institucional);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav aria-label="Menú principal">
+            <a href="inicio.html">Inicio</a>
+            <a href="quienes_somos.html">Quiénes Somos</a>
+            <a href="oferta.html">Oferta Académica</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="calendario.html">Calendario</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="matriculas.html">Matrículas</a>
+            <a href="login.html" style="color: var(--amarillo-institucional);">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Nuestra Institución</h1>
+            <p class="texto-centrado">
+                El <strong>Colegio Gabriel García Márquez</strong> de Tunja es un espacio de formación integral donde la excelencia académica y los valores humanos convergen para crear ciudadanos líderes.
+            </p>
+
+            <div class="grid-mision-vision">
+                <div class="tarjeta-info">
+                    <h2>Misión</h2>
+                    <p>El COLEGIO GABRIEL GARCÍA MÁRQUEZ es un Colegio de iniciativa privada, mixto, que desarrolla y presta servicios académicos integrados, de excelente calidad, cuyo objetivo es la formación educativa y humana de niños y jóvenes; fundamentado en los valores religiosos, éticos, morales, tecnológicos, inclusivos, sociales y ambientales; afirma su identidad a través de la permanente innovación pedagógica, la investigación científica, las humanidades, el deporte, las habilidades artísticas, la tecnología, la resolución de problemas, el inglés como segunda lengua y la confluencia de cinco principios básicos: Amor, servicio, fraternidad, efectividad, mejoramiento continuo y oración. Todo lo anterior, desde el enfoque de formación ciudadana y una perspectiva del desarrollo humano que respeta la diversidad y las diferencias.
+</p>
+                </div>
+                <div class="tarjeta-info">
+                    <h2>Visión</h2>
+                    <p>Para el 2026 EL COLEGIO GABRIEL GARCÍA MÀRQUEZ desea consolidarse como una Institución de alta calidad Educativa, que se caracteriza por educar en el amor por la vida, la justicia, la paz, la libertad, el servicio a los demás (especialmente las personas más desprotegidas), la atención a la diversidad, e enfoque técnico en sistemas y por la protección y preservación del medio ambiente. Todo lo anterior conllevará a la renovación y actualización del currículo, donde aspectos relevantes para la institución como: la espiritualidad, el bilingüismo, la inclusión y formación ciudadana, la alta calidad académica, la tecnología, lo ético y moral, desarrollados desde una política interna de gestión de calidad, harán la diferencia, consiguiendo, como efecto, el posicionamiento del colegio, a nivel regional y nacional, y el reconocimiento del mismo, en todo el sector educativo y social, como una de las instituciones educativas más exitosas.
+.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Colegio Gabriel García Márquez - Tunja | Paz y Bien</p>
+    </footer>
+
+</body>
+</html>
